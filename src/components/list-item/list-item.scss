@@ -1,0 +1,20 @@
+.list_item_container{
+    width: -webkit-fill-available;
+    border: 1px grey solid;
+    border-top: none;
+}
+.title{
+    width: 100%;
+    font-weight: 700;
+}
+.modifided{
+    width: 100%;
+}
+ @media(max-width:250px){
+    .title{
+        font-size: 12px;
+    }
+    .modifided{
+        font-size: 10px;
+    }
+ }

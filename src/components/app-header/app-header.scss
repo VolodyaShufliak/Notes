@@ -1,0 +1,14 @@
+.appheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    // padding-bottom: 10px;
+}
+@media(max-width:300px){
+    .appheader{
+        // height: auto;
+        flex-direction: column;
+        padding: 0px 0px 10px 0px;
+    }
+}

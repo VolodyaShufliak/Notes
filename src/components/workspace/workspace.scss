@@ -1,0 +1,27 @@
+.workspace{
+    &_container{
+        width: 70%;
+        padding: 0px 5px;
+        height: auto;
+    }
+    &_date{
+        // font-size: 15px;
+        color: black;
+        width: -webkit-fill-available;
+        text-align: center;
+        height: 10%;
+        font-size: 10px;
+    }
+    &_title{
+        width: -webkit-fill-available;
+        padding: 0px 0px;
+        height: 10%;
+        // font-size: 20px;
+
+    }
+    &_description{
+        width: -webkit-fill-available;
+        height: 75%;
+    }
+
+}

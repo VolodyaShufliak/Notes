@@ -1,0 +1,22 @@
+.control_panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        width: 25px;
+        height: 25px;
+        margin:5px 5px;
+        // padding: 5px 5px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 25px;
+        min-height: 25px;
+    }
+}
+@media(max-width:300px){
+    .control_panel{
+        width: auto;
+    }
+}

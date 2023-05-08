@@ -1,0 +1,11 @@
+.notes_content{
+    width: 100%;
+    display: flex;
+    max-height:calc(100vh - 35px);
+
+}
+@media(max-width:300px){
+    .notes_content{
+        max-height: calc(100vh - 70px);
+    }
+}
