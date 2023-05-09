@@ -8,10 +8,10 @@ import { useContext } from "react";
 const SlideBar = () => {
 
     const useNotesContext = useContext(notesContext) 
-    const sortNotes = (arr,value) => {
-        return arr.filter(item=>(item.title.includes(value) || item.description.includes(value)))
+    const filterNotes = (arr,value) => {
+        return arr.filter(item=>(item.title.toLowerCase().includes(value) || item.description.toLowerCase().includes(value)))
     }
-    const visibleNotes = sortNotes(useNotesContext.notes,useNotesContext.searchedText); 
+    const visibleNotes = filterNotes(useNotesContext.notes,useNotesContext.searchedText.toLowerCase()); 
     return (
         <div className="slidebar">
             {visibleNotes.map(item=><ListItem key={item.id} note={item}/>)}
