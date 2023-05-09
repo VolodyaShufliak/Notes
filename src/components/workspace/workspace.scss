@@ -5,11 +5,13 @@
         height: auto;
     }
     &_date{
+        display: flex;
         color: black;
         width: -webkit-fill-available;
-        text-align: center;
         height: 5%;
         font-size: 10px;
+        align-items: center;
+        justify-content: center;
     }
     &_title{
         width: -webkit-fill-available;
