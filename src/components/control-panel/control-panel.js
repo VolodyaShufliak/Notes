@@ -14,7 +14,7 @@ const ControlPanel = () => {
         <div className="control_panel">
             <button onClick={useNotesContext.addNote}><IoIosAdd/></button>
             <button disabled={useNotesContext.activeNoteId===null?true:false} onClick={()=>useNotesContext.deleteNote(useNotesContext.activeNoteId)}><MdDeleteForever/></button>
-            <button disabled={useNotesContext.activeNoteId===null?true:false}><FaEdit/></button>
+            <button disabled={useNotesContext.activeNoteId===null?true:false} onClick={useNotesContext.updateButtonFocus}><FaEdit/></button>
         </div>
     )
 }

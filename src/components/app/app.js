@@ -51,7 +51,8 @@ const App = () =>{
         showNote:showNote,
         changeTitle:changeTitle,
         changeDescription:changeDescription,
-        searchChange:searchChange
+        searchChange:searchChange,
+        updateButtonFocus:updateButtonFocus,
 
     })
     const getAllData = () => {
@@ -112,6 +113,11 @@ const App = () =>{
 
     function searchChange(value){
         setData(data=>({...data,searchedText:value,activeNoteId:null}))
+    }
+    function updateButtonFocus() {
+        const focusField =document.querySelector('.workspace_description'); 
+        focusField.focus();
+        focusField.selectionStart =focusField.value.length;
     }
 
     function crudForNotes(operation,parametrs){

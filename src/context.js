@@ -9,6 +9,7 @@ export const notesContext = createContext({
     deleteNote:()=>{},
     changeTitle:()=>{},
     changeDescription:()=>{},
-    searchChange:()=>{}
+    searchChange:()=>{},
+    updateButtonFocus:()=>{}
 });
 
