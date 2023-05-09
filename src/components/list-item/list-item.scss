@@ -3,7 +3,7 @@
     border: 1px grey solid;
     border-top: none;
     &.active_note{
-        background-color: aqua;
+        background-color: rgb(191, 191, 191);
     }
 }
 .title{
@@ -13,7 +13,7 @@
 .modifided{
     width: 100%;
 }
- @media(max-width:250px){
+ @media(max-width:300px){
     .title{
         font-size: 12px;
     }
