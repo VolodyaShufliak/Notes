@@ -1,7 +1,8 @@
-import "./list-item.scss"
+import { useContext } from "react";
 
 import { notesContext } from "../../context";
-import { useContext } from "react";
+
+import "./list-item.scss"
 
 const ListItem = (props) => {
     const useNotesContext = useContext(notesContext)

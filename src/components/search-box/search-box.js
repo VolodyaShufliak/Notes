@@ -1,8 +1,9 @@
+import { useContext } from 'react';
 import { MdSearch } from 'react-icons/md';
-import "./search-box.scss"
 
 import { notesContext } from '../../context';
-import { useContext } from 'react';
+
+import "./search-box.scss"
 
 const SearchBox = () => {
     const useNotesContext = useContext(notesContext);

@@ -1,8 +1,9 @@
-import "./workspace.scss"
-import { notesContext } from "../../context";
 import { useContext, useEffect, useRef, useState } from "react";
+
+import { notesContext } from "../../context";
 import Skeleton from "../skeleton/Skeleton";
 
+import "./workspace.scss"
     
 const Workspace = () => {
     const useNotesContext = useContext(notesContext);

@@ -1,5 +1,6 @@
 import ControlPanel from "../control-panel/control-panel";
 import SearchBox from "../search-box/search-box"
+
 import "./app-header.scss"
 
 const AppHeader = () => {

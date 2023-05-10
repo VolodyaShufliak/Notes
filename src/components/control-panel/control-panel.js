@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { MdDeleteForever} from "react-icons/md";
 import { IoIosAdd} from "react-icons/io";
 import {FaEdit} from "react-icons/fa"
+
 import { notesContext } from "../../context";
 
 import "./control-panel.scss"

@@ -1,12 +1,11 @@
-import ListItem from "../list-item/list-item";
-import "./sidebar.scss"
-
-import { notesContext } from "../../context";
 import { useContext } from "react";
 
+import ListItem from "../list-item/list-item";
+import { notesContext } from "../../context";
+
+import "./sidebar.scss"
 
 const SlideBar = () => {
-
     const useNotesContext = useContext(notesContext) 
     const filterNotes = (arr,value) => {
         return arr.filter(item=>(item.title.toLowerCase().includes(value) || item.description.toLowerCase().includes(value)))

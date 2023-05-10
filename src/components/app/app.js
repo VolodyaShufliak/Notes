@@ -1,9 +1,10 @@
 import { useEffect,useState } from "react";
-import AppHeader from "../app-header/app-header"
-import NotesContent from "../notes-content/notes-content";
 import { v4 as uuidv4 } from "uuid";
 
+import AppHeader from "../app-header/app-header"
+import NotesContent from "../notes-content/notes-content";
 import { notesContext } from "../../context";
+
 
 const idb =
   window.indexedDB ||
